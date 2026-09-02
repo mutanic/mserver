@@ -1,0 +1,20 @@
+{
+  "name": "mserver",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:control": "bun --elide-lines=0 --filter @mserver/control dev",
+    "dev:ns": "bun --elide-lines=0 --filter @mserver/nameserver dev",
+    "db:generate": "bun --filter @mserver/control db:generate",
+    "db:migrate": "bun --filter @mserver/control db:migrate"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "lucide-solid": "^1.16.0"
+  }
+}
