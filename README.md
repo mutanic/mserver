@@ -1,2 +1,5 @@
 # mserver
-MServer DNS
+
+- MServer Selfhosted DNS
+
+- Hobbyist
